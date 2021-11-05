@@ -1,4 +1,4 @@
-#lagstat.py
+# lagstat.py
 
 ## Overview
 This is a simple command line tool to monitor the lag of a Kakfa topic consumed by a Spark Structured Streaming application. The tool calculate the latest lag by comparing the committed offsets in the Structured Streaming checkpoint directory in HDFS with the latest offsets from the Kafka topic. 
