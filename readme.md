@@ -27,4 +27,4 @@ optional arguments:
   -j, --json         Print output as json
 ```
 
-The script has to be run on a Cloudera server (e.g. edge node) that has the HDFS gateway role.
+The script has to be run on a Cloudera server (e.g. edge node) that has the HDFS gateway role. If Kerberos is enabled on the Cloudera cluster, you need to kinit before running the script. The authenticated user must have permission to read the HDFS checkpoint directory and Kafka topic.
